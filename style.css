@@ -2,29 +2,64 @@
   box-sizing: border-box;
 }
 
+/* ace of base */
 body {
   margin: 0;
+
+  font-size: 100%;
+  color: #131313;
 }
 
-.wrapper {
-  display: flex;
+h2 {
+  margin: 0 0 1em;
 }
 
-main {
-  padding: 2em;
-  width: 50%;
-}
-
-aside {
-  padding: 2em;
-  width: 50%;
+ul {
+  padding: 0 0 1em 1em;
 }
 
 pre {
   padding: 16px;
   overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f6f8fa;
+  line-height: 1.7;
   border-radius: 3px;
+  box-shadow: 0 -.1em .25em #aaa2;
+  background-color: #f6f8fa;
 }
+
+/* lay *it* out */
+.wrapper {
+  padding: 0em 1em;
+  margin: 1em auto;
+  max-width: 1600px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+main,
+aside,
+article {
+  padding: 2em 1em;
+  width: 50%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (max-width: 630px) {
+  .wrapper {
+    flex-flow: column nowrap;
+  }
+
+  main,
+  aside,
+  article {
+    padding: 1.5em 0 0;
+    width: 100%;
+
+  }
+}
+

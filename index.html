@@ -12,20 +12,20 @@
     <main>
       <section>
         <h2>Selecting</h2>
-        <p>Selecting an element by class name</p>
+        <p>Select an element by class name</p>
         <pre>$( ".class-name" )</pre>
 
-        <p>Selecting an element by ID</p>
+        <p>Select an element by ID</p>
         <pre>$( "#idName" )</pre>
 
-        <p>Selecting an element by type</p>
+        <p>Select an element by type</p>
         <pre>$( "article" )</pre>
 
-        <p>Selecting an element by data attribute</p>
-        <pre>$( "[data-attribute='value']" )</pre>
-
-        <p>Selecting an element inside another</p>
+        <p>Select a child element</p>
         <pre>$( "article .test" )</pre>
+
+        <p>Select an element by data attribute</p>
+        <pre>$( "[data-attribute='value']" )</pre>
 
         <p><a href="https://api.jquery.com/category/selectors/">More about jQuery selectors</a></p>
       </section>
@@ -33,20 +33,28 @@
     <aside>
       <section>
         <h2>Manipulating</h2>
-        <p>Remove an element</p>
-        <pre>$( ".test" ).remove()</pre>
-
-        <p>Change the CSS</p>
-        <pre>$( ".test" ).css( "property", "value" );</pre>
-        <pre>$( ".test" ).css( "color", "white" );</pre>
+        <p>Apply CSS</p>
+        <pre>$( ".test" ).css( "color", "#fff" );</pre>
+        <pre>$( ".test" ).css( "backgroundColor", "#000" );</pre>
 
         <p>Change the HTML inside the selected element</p>
-        <pre>$( ".test" ).html( "<div>New content</div>" );</pre>
+        <pre>$( "article" ).html( "&lt;h2&gt;New title&lt;/h2&gt;" );</pre>
+
+        <p>Remove an element</p>
+        <pre>$( "article h2" ).remove()</pre>
 
         <p>Change the value</p>
-        <pre>$( ".test" ).val( "new value" );</pre>
+        <pre>$( "input" ).val( "new value" );</pre>
       </section>
     </aside>
+    <footer>
+      <article>
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://api.jquery.com/">API Documentation</a></li>
+        </ul>
+      </article>
+  </footer>
   </div>
 
 </body>
